@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:smart_home/screens/menu_screen.dart';
 import 'package:smart_home/screens/list_screen.dart';
+import 'package:smart_home/screens/drawer_screen.dart';
+import 'package:smart_home/screens/snackbar_screen.dart';
 
 void main() => runApp(SmartApartment());
 
@@ -19,7 +21,10 @@ class SmartApartment extends StatelessWidget {
       initialRoute: MenuScreen.id,
       routes: {
         MenuScreen.id: (context) => MenuScreen(),
-        ListScreen.id: (context) => ListScreen()
+        ListScreen.id: (context) => ListScreen(),
+        DrawerScreen.id: (context) => DrawerScreen(),
+        SnackbarScreen.id: (context) => SnackbarScreen()
+
       },
     );
   }
